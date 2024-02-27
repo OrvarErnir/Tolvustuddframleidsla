@@ -11,6 +11,25 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+     <style>
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+</style>   
+        
 	</head>
 	<body class="is-preload">
 
@@ -43,14 +62,45 @@
 				<!-- Main -->
 					<article id="main">
 						<header>
-							<h2>Verkefni 3: 3D prentun</h2>
+							<h2>Verkefni 3: 3D prentun og 3D skönnun</h2>
 							<p>Tölvustudd framleiðsla (Vél608G)</p>
 						</header>
 						<section class="wrapper style5">
 							<div class="inner">
 
-								<h3>Kemur síðar</h3>
-								<p></p>
+								<h2>Markmið verkefnisins</h2>
+								<p>Í þessu verkefni átti annars vegar að hanna módel fyrir 3D prentun sem ekki væri hægt að framkvæma með frádráttar framleiðslu. Max 100g af plasti samkvæmt slicer. Hins vegar átti að 3D skanna einhvern hlut, t.d. með photogrammetríu. </p>
+                                
+                                <hr />
+                                <h2>3D skönnun</h2>
+                                <p>Til þess að leysa þetta verkefni byrjaði ég á því að ná í appið <a href="https://www.qlone.pro/">Qlone</a> í símann minn, en það var gefið sem dæmi um 3D skönnunar app í verkefnalýsingunni á Canvas. Í því appi þarf þarf að borga til þess að fá að 3D skanna, eða prenta út einhversskonar mottu og ég ákvað því að reyna finna eitthvað annað. Ég fór þá í app store í símanum og leitaði af 3D scanner. Appið <a href="https://scaniverse.com/">Scaniverse</a> kom upp og ákvað ég að prófa það. Það var mjög einfalt í notkun, þar sem maður þurfti bara að taka stutt myndband af hlutnum sjálfum en niðurstöðurnar fannst mér ekki alveg nógu góðar.</p><img src="scaniverse.jpg" alt="Description of the image" style="width: 30%; margin: 0 auto; display: block;"> <br/><p>Ég ákvað þá að prófa appið <a href="https://poly.cam/">Polycam</a> þar sem vinur minn <a href="https://arnor-dadi.github.io/TolvustuddFramleidsla/Verkefni3.html">Arnór Daði</a> hafði notað það og virkaði nokkuð vel. Þetta virkaði svipað og scaniverse nema í staðinn fyrir upptöku voru teknar margar myndir af hlutnum.</p>
+                                <div class="row">
+                                  <div class="column">
+                                    <img src="klaki1.jpg" alt="Description of the image" style="width: 80%; margin: 0 auto; display: block;">
+                                  </div>
+                                  <div class="column">
+                                    <img src="klaki2.jpg" alt="Description of the image" style="width: 80%; margin: 0 auto; display: block;">
+                                  </div>
+                                  <div class="column">
+                                    <img src="klaki3.jpg" alt="Description of the image" style="width: 80%; margin: 0 auto; display: block;">
+                                  </div>
+                                </div><br/>
+                                <p>Niðurstöðurnar voru nokkuð góðar, miðað við að þetta var gert með fríu appi í símanum. Til þess að raða myndunum hlið við hlið er hægt að nota þetta sem er að finna <a href="https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_images_side_by_side">hér</a></p>
+                                <hr />
+                                <h2>3D prentun</h2>
+                                <h4>Undirbúningsvinna</h4>
+								<p>Eins og áður byrjaði ég á því að skoða verkefni hjá nemum fyrri ára fyrir innblástur. Eftir smá leit rakst ég á verkefnið hennar <a href="https://helgamm.github.io/portfolio/06_3Dprinting.html#">Helgu Maríu</a>, en hún 3D prentaði tannbursta haldara. Mér fannst það mjög sniðug hugmynd og fór þá á netið í til að fleiri dæmum um  tannbursta haldara. Þessi fyrir neðan fannst mér líta vel út, auk þess ekki of flókinn.</p><img src="inspo.png" alt="Description of the image" style="width: 30%; margin: 0 auto; display: block;"> <br/><p> Ég hugsaði mér þá að gera einhvern svipaðan en í staðinn vildi ég hafa þrjú pláss fyrir tannbursta fremst og fyrir aftan þau pláss fyrir tannkrem, eitthvað í líkingu við þetta (séð ofan frá):</p><img src="krot.jpg" alt="Description of the image" style="width: 30%; margin: 0 auto; display: block;"> <br/>
+                                
+                                <hr />
+                                
+                                <h4>Teikning í Fusion360</h4>
+                                <p>Teikningin í Fusion var nokkuð einföld. Ég byrjað á því að teikna tvo ferhyrninga með fillet á öllum hornum.</p><img src="sketch1.png" alt="Description of the image" style="width: 30%; margin: 0 auto; display: block;"> <br/><p>Næst extrudaði ég það, þannig að ég var kominn með stykkið sjálft án gatanna. Til að þess að búa til götin, teiknaði ég einfaldelga bara einn hring fyrir tannbursta og einn hring fyrir tannkremið. Ég extrudaði það svo í gegn og aðeins inn í neðri partinn, þ.a. tannburstarnir og tennkremið haldist vel á sínum stað. Að lokum bjó ég til rectangular pattern fyrir tannbursta gatið til að mynda hin tvö götin. Hluturinn leit þá svona út:</p><img src="tannhaldari.png" alt="Description of the image" style="width: 30%; margin: 0 auto; display: block;"> <br/>
+                                <p>Ég skoðaði líka aðeins að hafa 4 göt, þ.e. tvo göt sitthvoru megin við tannkremið eins og á myndinni efst, en þá var þetta orðið frekar langt og taldi ég því þetta vera hentugra. Einnig notaðist ég við parametra þegar ég teiknaði þetta því það voru einhverjar líkur á því að ég þyrfti að breyta stærðinni. Að lokum export-aði ég skrána í stl form</p><img src="tann-para.png" alt="Description of the image" style="width: 0%; margin: 0 auto; display: block;"> <br/>
+                                
+                                <hr />
+                                <h4>Prusa slicer/Undirúningur fyrir 3D prentun</h4>
+                                <p>Næst var að ná í forritið <a href="https://www.prusa3d.com/en/page/prusaslicer_424/">Prusa slicer</a>, en ég valdi að nota það frekar en <a href="https://ultimaker.com/software/ultimaker-cura/">Cura</a> þar sem það verður unnið með Prusa MK3+ prentara. Þar inni opnaði ég stl skrána af hlutnum og leit það þá svona út inn í Prusaslicer:</p><img src="Prusa1.png" alt="Description of the image" style="width: 70%; margin: 0 auto; display: block;"> <br/><p>Ég ákvað snúa hlutnum á hliðina þ.a. það væri sem minnst "overhang"</p><img src="Prusa2.png" alt="Description of the image" style="width: 70%; margin: 0 auto; display: block;"> <br/><p>Ég valdi svo none í supports og ýtti á slice now neðst í hægra horninu til að fá upplýsingar um prentunina</p><img src="slice.png" alt="Description of the image" style="width: 50%; margin: 0 auto; display: block;"> <br/><p>Þar sást að prentunin muni taka 5 klst og 20 mínútur, sem er töluverður tími, og að þetta muni þurfa 60,71g af plasti. Áður en ég færi í það að prenta út allan hlutinn var mikilvægt að gera smá prufu á stöðum sem gætu verið viðkvæmir, eins og í kringum götin. Ég fór þá aftur í Fusion og teiknaði lítinn kassa með gati í.</p> <img src="3d-test.png" alt="Description of the image" style="width: 50%; margin: 0 auto; display: block;"><br/><p>Eins og áður exportaði ég þessu í stl skrá, opnaði í Prusa slicer og ýtti á slice now. Áður en ég get síðan prentað út prófunina, ýtti ég á export G-code og setti það inn á SD kort.</p>
+                                
 							</div>
 						</section>
 					</article>

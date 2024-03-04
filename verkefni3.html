@@ -89,17 +89,70 @@
                                 <hr />
                                 <h2>3D prentun</h2>
                                 <h4>Undirbúningsvinna</h4>
-								<p>Eins og áður byrjaði ég á því að skoða verkefni hjá nemum fyrri ára fyrir innblástur. Eftir smá leit rakst ég á verkefnið hennar <a href="https://helgamm.github.io/portfolio/06_3Dprinting.html#">Helgu Maríu</a>, en hún 3D prentaði tannbursta haldara. Mér fannst það mjög sniðug hugmynd og fór þá á netið í til að fleiri dæmum um  tannbursta haldara. Þessi fyrir neðan fannst mér líta vel út, auk þess ekki of flókinn.</p><img src="inspo.png" alt="Description of the image" style="width: 30%; margin: 0 auto; display: block;"> <br/><p> Ég hugsaði mér þá að gera einhvern svipaðan en í staðinn vildi ég hafa þrjú pláss fyrir tannbursta fremst og fyrir aftan þau pláss fyrir tannkrem, eitthvað í líkingu við þetta (séð ofan frá):</p><img src="krot.jpg" alt="Description of the image" style="width: 30%; margin: 0 auto; display: block;"> <br/>
+								<p>Eins og áður byrjaði ég á því að skoða verkefni hjá nemum fyrri ára fyrir innblástur. Eftir smá leit rakst ég á verkefnið hennar <a href="https://helgamm.github.io/portfolio/06_3Dprinting.html#">Helgu Maríu</a>, en hún 3D prentaði tannbursta haldara. Mér fannst það mjög sniðug hugmynd og fór þá á netið í leit að fleiri dæmum um  tannbursta haldara. Þessi fyrir neðan fannst mér líta vel út, auk þess ekki of flókinn.</p><img src="inspo.png" alt="Description of the image" style="width: 30%; margin: 0 auto; display: block;"> <br/><p> Ég hugsaði mér þá að gera einhvern svipaðan en í staðinn vildi ég hafa þrjú pláss fyrir tannbursta fremst og fyrir aftan þau pláss fyrir tannkrem, eitthvað í líkingu við þetta (séð ofan frá):</p><img src="krot.jpg" alt="Description of the image" style="width: 30%; margin: 0 auto; display: block;"> <br/>
                                 
                                 <hr />
                                 
                                 <h4>Teikning í Fusion360</h4>
                                 <p>Teikningin í Fusion var nokkuð einföld. Ég byrjað á því að teikna tvo ferhyrninga með fillet á öllum hornum.</p><img src="sketch1.png" alt="Description of the image" style="width: 30%; margin: 0 auto; display: block;"> <br/><p>Næst extrudaði ég það, þannig að ég var kominn með stykkið sjálft án gatanna. Til að þess að búa til götin, teiknaði ég einfaldelga bara einn hring fyrir tannbursta og einn hring fyrir tannkremið. Ég extrudaði það svo í gegn og aðeins inn í neðri partinn, þ.a. tannburstarnir og tennkremið haldist vel á sínum stað. Að lokum bjó ég til rectangular pattern fyrir tannbursta gatið til að mynda hin tvö götin. Hluturinn leit þá svona út:</p><img src="tannhaldari.png" alt="Description of the image" style="width: 30%; margin: 0 auto; display: block;"> <br/>
-                                <p>Ég skoðaði líka aðeins að hafa 4 göt, þ.e. tvo göt sitthvoru megin við tannkremið eins og á myndinni efst, en þá var þetta orðið frekar langt og taldi ég því þetta vera hentugra. Einnig notaðist ég við parametra þegar ég teiknaði þetta því það voru einhverjar líkur á því að ég þyrfti að breyta stærðinni. Að lokum export-aði ég skrána í stl form</p><img src="tann-para.png" alt="Description of the image" style="width: 0%; margin: 0 auto; display: block;"> <br/>
+                                <p>Ég skoðaði líka aðeins að hafa 4 göt, þ.e. tvo göt sitthvoru megin við tannkremið eins og á myndinni efst, en þá var þetta orðið frekar langt og taldi ég því hitt vera hentugra. Einnig notaðist ég við parametra þegar ég teiknaði þetta því það voru einhverjar líkur á því að ég þyrfti að breyta stærðinni. Að lokum export-aði ég skrána í stl form</p><img src="tann-para.png" alt="Description of the image" style="width: 0%; margin: 0 auto; display: block;"> <br/>
                                 
                                 <hr />
                                 <h4>Prusa slicer/Undirúningur fyrir 3D prentun</h4>
-                                <p>Næst var að ná í forritið <a href="https://www.prusa3d.com/en/page/prusaslicer_424/">Prusa slicer</a>, en ég valdi að nota það frekar en <a href="https://ultimaker.com/software/ultimaker-cura/">Cura</a> þar sem það verður unnið með Prusa MK3+ prentara. Þar inni opnaði ég stl skrána af hlutnum og leit það þá svona út inn í Prusaslicer:</p><img src="Prusa1.png" alt="Description of the image" style="width: 70%; margin: 0 auto; display: block;"> <br/><p>Ég ákvað snúa hlutnum á hliðina þ.a. það væri sem minnst "overhang"</p><img src="prusa2.png" alt="Description of the image" style="width: 70%; margin: 0 auto; display: block;"> <br/><p>Ég valdi svo none í supports og ýtti á slice now neðst í hægra horninu til að fá upplýsingar um prentunina</p><img src="slice.png" alt="Description of the image" style="width: 50%; margin: 0 auto; display: block;"> <br/><p>Þar sást að prentunin muni taka 5 klst og 20 mínútur, sem er töluverður tími, og að þetta muni þurfa 60,71g af plasti. Áður en ég færi í það að prenta út allan hlutinn var mikilvægt að gera smá prufu á stöðum sem gætu verið viðkvæmir, eins og í kringum götin. Ég fór þá aftur í Fusion og teiknaði lítinn kassa með gati í.</p> <img src="3d-test.png" alt="Description of the image" style="width: 50%; margin: 0 auto; display: block;"><br/><p>Eins og áður exportaði ég þessu í stl skrá, opnaði í Prusa slicer og ýtti á slice now. Áður en ég get síðan prentað út prófunina, ýtti ég á export G-code og setti það inn á SD kort.</p>
+                                <p>Næst var að ná í forritið <a href="https://www.prusa3d.com/en/page/prusaslicer_424/">Prusa slicer</a>, en ég valdi að nota það frekar en <a href="https://ultimaker.com/software/ultimaker-cura/">Cura</a> þar sem það var unnið með Prusa MK3+ prentara. Þar inni opnaði ég stl skrána af hlutnum og leit það þá svona út inn í Prusaslicer:</p><img src="Prusa1.png" alt="Description of the image" style="width: 70%; margin: 0 auto; display: block;"> <br/><p>Ég ákvað snúa hlutnum á hliðina þ.a. það væri sem minnst overhang.</p><img src="prusa2.png" alt="Description of the image" style="width: 70%; margin: 0 auto; display: block;"> <br/><p>Ég valdi svo none í supports og ýtti á slice now neðst í hægra horninu til að fá upplýsingar um prentunina</p><img src="slice.png" alt="Description of the image" style="width: 50%; margin: 0 auto; display: block;"> <br/><p>Þar sást að prentunin muni taka 5 klst og 20 mínútur, sem er töluverður tími, og að þetta muni þurfa 60,71g af plasti. Áður en ég færi í það að prenta út allan hlutinn var mikilvægt að gera smá prufu á stöðum sem gætu verið viðkvæmir, eins og í kringum götin. Ég fór þá aftur í Fusion og teiknaði lítinn kassa með gati í.</p> <img src="3d-test.png" alt="Description of the image" style="width: 50%; margin: 0 auto; display: block;"><br/><p>Eins og áður exportaði ég þessu í stl skrá, opnaði í Prusa slicer og ýtti á slice now. Áður en ég get síðan prentað út prófunina, ýtti ég á export G-code og setti það inn á SD kort.</p>
+                                
+                                <hr />
+                                <h4>3D prentunin</h4>
+                                <p>Ég byrjaði á því að 3D prenta prófunina mína. Til þess að gera það setti ég SD kortið inn í prentarann og valdi rétta skrá. Að auki var sett smá lím á plötuna í 3D prentaranum svo þetta gangi betur. Eftir 39 mínútur var prófunin klár.</p><img src="3dprufa.jpg" alt="Description of the image" style="width: 50%; margin: 0 auto; display: block;"> <br/> <P>Prófunin kom nokkuð vel út, það var smá óslétta þar sem overhangið er eins og mátti kannski búast við með engan stuðning en mögulega hægt að pússa það burt. Eina sem var þá eftir var að prenta út allan hlutinn minn. Eins og fyrir prufunina exportaði ég g-kóðanum og kom honum á SD kort. Prentunin átti eftir að taka 5 klst og 20 mínútur þ.a. ég fór heim, þar sem klukkan var í kringum 16. Daginn eftir mætti ég sótti hlutinn og prentunin hafði gengið vel.</P><img src="v3-lokamynd.jpg" alt="Description of the image" style="width: 50%; margin: 0 auto; display: block;"> <br/><p> Tannbursta haldarinn fannst mér koma vel út, það er smá óslétta inn í götunum eins og mátti búast við eftir prófunina, en það hefur þó engin áhrif á virknina. Tannburstarnir og tannkremið passa vel í götin og er ég því sáttur með þetta.</p>
+                                
+                                <hr />
+                                
+                                <h4>Vinnuálag</h4>
+                                <div class="table-wrapper">
+										<table>
+											<thead>
+												<tr>
+													<th>Nr</th>
+													<th>Verkþáttur</th>
+													<th>Klukkutímar</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>1</td>
+													<td>Leit að hugmyndum</td>
+													<td>1,5</td>
+												</tr>
+												<tr>
+													<td>2</td>
+													<td>3D skönnun</td>
+													<td>2</td>
+												</tr>
+												<tr>
+													<td>3</td>
+													<td>Vinna í Fusion360</td>
+													<td>3</td>
+												</tr>
+												<tr>
+													<td>4</td>
+													<td>Undirbúningur og prófanir fyrir 3D prentun</td>
+													<td>4</td>
+												</tr>
+												<tr>
+													<td>5</td>
+													<td>Vefsíðugerð</td>
+													<td>5,5</td>
+												</tr>
+											</tbody>
+											<tfoot>
+												<tr>
+													<td colspan="1"></td>
+                                                    <td>Heildartími</td>
+													<td>16</td>
+												</tr>
+											</tfoot>
+										</table>
+									</div>
                                 
 							</div>
 						</section>
